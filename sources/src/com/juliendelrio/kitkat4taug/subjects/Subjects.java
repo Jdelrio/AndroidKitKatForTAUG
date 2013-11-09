@@ -2,16 +2,23 @@ package com.juliendelrio.kitkat4taug.subjects;
 
 public class Subjects {
 	public enum Elements {
-		NewStorageAPI
+		NewStorageAPI, SDCardWithoutPermission
 	}
 
 	public static AbstractSubjectfFragment getFragment(Elements element) {
-		return new AbstractSubjectfFragment() {
-		};
+		switch (element) {
+		case NewStorageAPI:
+			return new SubjectfFragmentNewStorageApi();
+		case SDCardWithoutPermission:
+			return new SubjectfFragmentSDCardWithoutPermission();
+
+		default:
+			return new AbstractSubjectfFragment() {
+			};
+		}
 	}
 
 	public static AbstractSubjectfFragment getFragment(String id) {
-		return new AbstractSubjectfFragment() {
-		};
+		return getFragment(Elements.valueOf(id));
 	}
 }

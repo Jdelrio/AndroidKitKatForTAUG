@@ -3,5 +3,7 @@
 
     <string name="app_name">KitKat4TAUG</string>
     <string name="title_item_detail">Item Detail</string>
+    <string name="swp_title1">Root accessible path</string>
+    <string name="swp_title2">Folder content</string>
 
 </resources>
