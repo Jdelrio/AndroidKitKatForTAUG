@@ -5,5 +5,10 @@
     <string name="title_item_detail">Item Detail</string>
     <string name="swp_title1">Root accessible path</string>
     <string name="swp_title2">Folder content</string>
+    <string name="newsensors_title1">Geomagnetic rotation vector</string>
+    <string name="newsensors_title2">Step counter</string>
+    <string name="newsensors_title3">Step detector</string>
+    <string name="accuracy">Accuracy :</string>
+    <string name="values">Values :</string>
 
 </resources>
