@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.juliendelrio.kitkat4taug.R;
 
@@ -45,6 +46,13 @@ public class SubjectfFragmentNewSMSFramework extends AbstractSubjectfFragment {
 		public void bindView(View view, Context context, Cursor cursor) {
 			Holder holder = (Holder) view.getTag();
 			setContent(cursor, holder);
+		}
+
+		@Override
+		protected void onContentChanged() {
+			super.onContentChanged();
+			getCursor().requery();
+			notifyDataSetChanged();
 		}
 
 		@Override
