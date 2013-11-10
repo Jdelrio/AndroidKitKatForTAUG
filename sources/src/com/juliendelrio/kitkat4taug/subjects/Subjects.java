@@ -2,7 +2,7 @@ package com.juliendelrio.kitkat4taug.subjects;
 
 public class Subjects {
 	public enum Elements {
-		NewSensors, SDCardWithoutPermission, PrintingFramework, NewSMSFramework
+		NewSensors, SDCardWithoutPermission, PrintingFramework, NewSMSFramework, FullScreenMode
 	}
 
 	public static AbstractSubjectfFragment getFragment(Elements element) {
@@ -13,7 +13,8 @@ public class Subjects {
 			return new SubjectfFragmentSDCardWithoutPermission();
 		case NewSMSFramework:
 			return new SubjectfFragmentNewSMSFramework();
-
+		case FullScreenMode:
+			return new SubjectfFragmentFullScreenMode();
 		default:
 			return new AbstractSubjectfFragment() {
 			};

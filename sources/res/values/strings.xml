@@ -18,5 +18,11 @@
     <string name="send_api">Send API</string>
     <string name="default_message">Je suis en train de tester l\'application du Toulouse Android User Group. Renseigne toi sur http://toulouseaug.blogspot.com</string>
     <string name="no_app_to_handle">No app to handle this intent.</string>
+    <string name="which_element_hidden">Select which elements are hidden</string>
+    <string name="element_system_ui">System UI</string>
+    <string name="element_system_ui_with_navigation">System UI With Navigation</string>
+    <string name="element_navigation_ui">Navigation UI</string>
+    <string name="element_navigation_ui_with_immersive">Navigation UI with immersive</string>
+    <string name="element_default">Default</string>
 
 </resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        style="@style/RootActivityElement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/which_element_hidden"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/Button_navigationUI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/element_navigation_ui" />
+
+        <Button
+            android:id="@+id/Button_navigationUIWithImmersive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/element_navigation_ui_with_immersive" />
+
+        <Button
+            android:id="@+id/Button_systemUI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/element_system_ui" />
+
+        <Button
+            android:id="@+id/Button_systemUIWithNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/element_navigation_ui_with_immersive" />
+
+        <Button
+            android:id="@+id/Button_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/element_default" />
+    </LinearLayout>
+
+</ScrollView>
