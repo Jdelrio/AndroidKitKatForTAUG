@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 import com.juliendelrio.kitkat4taug.R;
 
-public class SubjectfFragmentSDCardWithoutPermission extends AbstractSubjectfFragment {
+public class SubjectFragmentSDCardWithoutPermission extends AbstractSubjectFragment {
 
 	private TextView textView_path;
 	private ListView listView;

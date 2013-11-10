@@ -42,9 +42,9 @@ public class SubjectActivity extends FragmentActivity {
 			// Create the detail fragment and add it to the activity
 			// using a fragment transaction.
 			Bundle arguments = new Bundle();
-			String subjectId = getIntent().getStringExtra(AbstractSubjectfFragment.ARG_ITEM_ID);
-			arguments.putString(AbstractSubjectfFragment.ARG_ITEM_ID, subjectId);
-			AbstractSubjectfFragment fragment = Subjects.getFragment(subjectId);
+			String subjectId = getIntent().getStringExtra(AbstractSubjectFragment.ARG_ITEM_ID);
+			arguments.putString(AbstractSubjectFragment.ARG_ITEM_ID, subjectId);
+			AbstractSubjectFragment fragment = Subjects.getFragment(subjectId);
 			fragment.setArguments(arguments);
 			getSupportFragmentManager().beginTransaction()
 					.add(R.id.item_detail_container, fragment).commit();

@@ -5,23 +5,25 @@ public class Subjects {
 		NewSensors, SDCardWithoutPermission, PrintingFramework, NewSMSFramework, FullScreenMode
 	}
 
-	public static AbstractSubjectfFragment getFragment(Elements element) {
+	public static AbstractSubjectFragment getFragment(Elements element) {
 		switch (element) {
 		case NewSensors:
-			return new SubjectfFragmentNewSensors();
+			return new SubjectFragmentNewSensors();
 		case SDCardWithoutPermission:
-			return new SubjectfFragmentSDCardWithoutPermission();
+			return new SubjectFragmentSDCardWithoutPermission();
 		case NewSMSFramework:
-			return new SubjectfFragmentNewSMSFramework();
+			return new SubjectFragmentNewSMSFramework();
 		case FullScreenMode:
-			return new SubjectfFragmentFullScreenMode();
+			return new SubjectFragmentFullScreenMode();
+		case PrintingFramework:
+			return new SubjectFragmentPrintingFramework();
 		default:
-			return new AbstractSubjectfFragment() {
+			return new AbstractSubjectFragment() {
 			};
 		}
 	}
 
-	public static AbstractSubjectfFragment getFragment(String id) {
+	public static AbstractSubjectFragment getFragment(String id) {
 		return getFragment(Elements.valueOf(id));
 	}
 }

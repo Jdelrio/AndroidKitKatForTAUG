@@ -9,7 +9,7 @@ import android.widget.Button;
 
 import com.juliendelrio.kitkat4taug.R;
 
-public class SubjectfFragmentFullScreenMode extends AbstractSubjectfFragment implements
+public class SubjectFragmentFullScreenMode extends AbstractSubjectFragment implements
 		OnClickListener {
 
 	private View mDecorView;

@@ -22,7 +22,7 @@ import android.widget.Toast;
 
 import com.juliendelrio.kitkat4taug.R;
 
-public class SubjectfFragmentNewSMSFramework extends AbstractSubjectfFragment {
+public class SubjectFragmentNewSMSFramework extends AbstractSubjectFragment {
 
 	private ListView listView;
 	private EditText editTextReceiver;

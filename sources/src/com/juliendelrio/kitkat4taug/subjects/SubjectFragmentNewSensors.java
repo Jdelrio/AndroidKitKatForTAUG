@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 import com.juliendelrio.kitkat4taug.R;
 
-public class SubjectfFragmentNewSensors extends AbstractSubjectfFragment implements
+public class SubjectFragmentNewSensors extends AbstractSubjectFragment implements
 		SensorEventListener {
 	private static final StringBuilder sBuilder = new StringBuilder();
 	public static final int TYPE_GEOMAGNETIC_ROTATION_VECTOR = Sensor.TYPE_GEOMAGNETIC_ROTATION_VECTOR;

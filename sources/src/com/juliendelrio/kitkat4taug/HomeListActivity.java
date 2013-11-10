@@ -1,6 +1,6 @@
 package com.juliendelrio.kitkat4taug;
 
-import com.juliendelrio.kitkat4taug.subjects.AbstractSubjectfFragment;
+import com.juliendelrio.kitkat4taug.subjects.AbstractSubjectFragment;
 import com.juliendelrio.kitkat4taug.subjects.SubjectActivity;
 import com.juliendelrio.kitkat4taug.subjects.Subjects;
 
@@ -63,8 +63,8 @@ public class HomeListActivity extends FragmentActivity implements HomeListFragme
 			// adding or replacing the detail fragment using a
 			// fragment transaction.
 			Bundle arguments = new Bundle();
-			arguments.putString(AbstractSubjectfFragment.ARG_ITEM_ID, id);
-			AbstractSubjectfFragment fragment = Subjects.getFragment(id);
+			arguments.putString(AbstractSubjectFragment.ARG_ITEM_ID, id);
+			AbstractSubjectFragment fragment = Subjects.getFragment(id);
 			fragment.setArguments(arguments);
 			getSupportFragmentManager().beginTransaction()
 					.replace(R.id.item_detail_container, fragment).commit();
@@ -73,7 +73,7 @@ public class HomeListActivity extends FragmentActivity implements HomeListFragme
 			// In single-pane mode, simply start the detail activity
 			// for the selected item ID.
 			Intent detailIntent = new Intent(this, SubjectActivity.class);
-			detailIntent.putExtra(AbstractSubjectfFragment.ARG_ITEM_ID, id);
+			detailIntent.putExtra(AbstractSubjectFragment.ARG_ITEM_ID, id);
 			startActivity(detailIntent);
 		}
 	}
