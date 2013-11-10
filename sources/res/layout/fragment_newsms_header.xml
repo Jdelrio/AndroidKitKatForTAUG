@@ -53,21 +53,38 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/textView3"
         android:ems="10"
-        android:inputType="textMultiLine" />
+        android:inputType="textMultiLine"
+        android:text="@string/default_message" />
 
-    <Button
-        android:id="@+id/button_send"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linearLayout_send"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editText_message"
-        android:layout_centerHorizontal="true"
-        android:text="@string/send" />
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/button_send_manager"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="@string/send_manager" />
+
+        <Button
+            android:id="@+id/button_send_api"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="@string/send_api" />
+    </LinearLayout>
 
     <View
         android:id="@+id/separator"
         android:layout_width="wrap_content"
         android:layout_height="2dp"
-        android:layout_below="@+id/button_send"
+        android:layout_below="@+id/linearLayout_send"
         android:layout_margin="10dp"
         android:background="#ABABAB" />
 

@@ -14,6 +14,9 @@
     <string name="receiver">Receiver :</string>
     <string name="message">Message :</string>
     <string name="root_elements_sms">SMS</string>
-    <string name="send">Send</string>
+    <string name="send_manager">Send manager</string>
+    <string name="send_api">Send API</string>
+    <string name="default_message">Je suis en train de tester l\'application du Toulouse Android User Group. Renseigne toi sur http://toulouseaug.blogspot.com</string>
+    <string name="no_app_to_handle">No app to handle this intent.</string>
 
 </resources>
