@@ -10,5 +10,10 @@
     <string name="newsensors_title3">Step detector</string>
     <string name="accuracy">Accuracy :</string>
     <string name="values">Values :</string>
+    <string name="write_sms">Write SMS</string>
+    <string name="receiver">Receiver :</string>
+    <string name="message">Message :</string>
+    <string name="root_elements_sms">SMS</string>
+    <string name="send">Send</string>
 
 </resources>

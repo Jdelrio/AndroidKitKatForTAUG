@@ -11,6 +11,8 @@ public class Subjects {
 			return new SubjectfFragmentNewSensors();
 		case SDCardWithoutPermission:
 			return new SubjectfFragmentSDCardWithoutPermission();
+		case NewSMSFramework:
+			return new SubjectfFragmentNewSMSFramework();
 
 		default:
 			return new AbstractSubjectfFragment() {
